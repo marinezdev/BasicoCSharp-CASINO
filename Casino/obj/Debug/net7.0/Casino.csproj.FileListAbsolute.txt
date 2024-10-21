@@ -1,0 +1,30 @@
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.deps.json
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.runtimeconfig.json
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.pdb
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.csproj.AssemblyReference.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.AssemblyInfoInputs.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.AssemblyInfo.cs
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.csproj.CoreCompileInputs.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/refint/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.pdb
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.genruntimeconfig.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/Programacion Basica con C#/proyectoFinal/Casino/Casino/obj/Debug/net7.0/ref/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.deps.json
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.runtimeconfig.json
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/bin/Debug/net7.0/Casino.pdb
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.csproj.AssemblyReference.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.AssemblyInfoInputs.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.AssemblyInfo.cs
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.csproj.CoreCompileInputs.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/refint/Casino.dll
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.pdb
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/Casino.genruntimeconfig.cache
+/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/obj/Debug/net7.0/ref/Casino.dll
