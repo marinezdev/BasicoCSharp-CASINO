@@ -17,11 +17,11 @@ do
 {
     Console.Clear();
     Console.WriteLine("Welcom to the C A S I N O\n");
-    Console.WriteLine("Selecciona una opcion de juego\n" +
+    Console.WriteLine("Choose an option to play\n" +
                     "  1. Black Jack\n" +
-                    "  2. Piedra Papel o Tiejeras\n" +
-                    "  9. Para terminar de jugar (o escriba la letra 'X')\n" +
-                    "100. Comprar monedas");
+                    "  2. Rock, paper, scissors\n" +
+                    "  9. Quit (o escriba la letra 'X')\n" +
+                    "100. Buy Coins");
 
     userOptionChose = Console.ReadLine() ?? string.Empty;
     switch (userOptionChose.ToUpper())
@@ -34,18 +34,18 @@ do
             if (playerCoins <= 0)
             {
                 Console.Clear();
-                Console.WriteLine("No cuenta con moneda para jugar, por favor compre algunas para poder jugar...");
+                Console.WriteLine("You don't have more coins; pelaase you buy some coins to continue...");
                 Console.ReadLine();
             }
             else
             {
                 Console.Clear();
-                Console.WriteLine("Cuantas monedas deseas apostar?\n ... {por favor, indique un numero entero mayor a cero; o escriba 'X' si desea salir del juego}");
+                Console.WriteLine("how many coins do you want to buy?");
                 playerApuesta = Console.ReadLine() ?? string.Empty;
 
                 if (playerApuesta.ToUpper() == "X")
                 {
-                    Console.WriteLine("Gracias por jugar Piedras, Papel o Tejeras");
+                    Console.WriteLine("Thanks for play Rock, paper, scissors");
                     Console.ReadLine();
                 }
                 else
@@ -54,44 +54,42 @@ do
                     if (playerApuestaHecha == 0 || playerApuestaHecha > playerCoins)
                     {
                         Console.Clear();
-                        Console.WriteLine("La apuesta no es válida, por favor indique una apuesta de monedas correcta (mayor a cero y menor a la cantidad de monedas que tiene actualmente)");
+                        Console.WriteLine("The bet is not valid, please indicate a correct bet to continue...");
                         Console.ReadLine();
                     }
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("Juguemos Piedra, Papel o Tijeras\n ... {teclee <enter> para iniciar el juego}");
+                        Console.WriteLine("Let's playing Rock, paper, scissors\n ... {input <enter> to play}");
                         Console.ReadLine();
 
                         Console.Clear();
-                        Console.WriteLine("Jugando...");
+                        Console.WriteLine("Playing...");
                         
                         bool jugando = true;
                         int playerPC = 0;
                         int playerUser = 0;
                         string playerUserOption = string.Empty;
-                        string[] opciociones = { "Piedra", "Papel", "Tijeras"};
+                        string[] opciociones = { "Rock", "Paper", "Scissors" };
 
                         while (jugando)
                         {
-                            
-
-                            Console.WriteLine($"Tu saldo en monedas es: {playerCoins} y la apuesta es de: {playerApuestaHecha}");
-                            Console.WriteLine("Elige una opción:\n" +
-                                "1 - Piedra\n" +
-                                "2 - Papel\n" +
-                                "3 - Tijeras\n" +
-                                "X - para salir del juego.");
+                            Console.WriteLine($"Your balance is {playerCoins} coins, and the bet placed is {playerApuestaHecha} coins");
+                            Console.WriteLine("Choose an option:\n" +
+                                "1 - Rock\n" +
+                                "2 - Paper\n" +
+                                "3 - Scissors\n" +
+                                "X - to Quit.");
                             playerUserOption = Console.ReadLine() ?? string.Empty;
                             if (playerUserOption.ToUpper() == "X")
                             {
                                 jugando = false;
                                 Console.Clear();
-                                Console.WriteLine("Gracias por jugar Piedra, Papel o Tijeras");
-                                Console.WriteLine($"Ya no cuenta con las monedas sufientes para continuar apostando\nLa apuesta establecida es de {playerApuestaHecha} monedas");
-                                Console.WriteLine($"Su saldo inicial fue de: {playerSaldoInicial}");
-                                Console.WriteLine($"Su saldo final en este juego es de: {playerCoins}");
-                                Console.WriteLine($"Su record es:\nTotal de juegos Ganados: {winUser}\nTotal de juegos Perdidos: {winDealer}");
+                                Console.WriteLine("Thaks for play: Rock, paper, scissors");
+                                Console.WriteLine($"You no longer have enough coins to continue betting. The established bet is {playerApuestaHecha} coins.");
+                                Console.WriteLine($"You started with {playerSaldoInicial} coins.");
+                                Console.WriteLine($"Your balance in this game is: {playerCoins}");
+                                Console.WriteLine($"Your record is:\nGames Wins: {winUser}\nGames Lost: {winDealer}");
                                 Console.ReadLine();
                             }
                             else
@@ -120,8 +118,8 @@ do
                                 if (validacion)
                                 {
                                     playerUser--;
-                                    Console.WriteLine($"El Dealer eligió: {opciociones[playerPC]}");
-                                    Console.WriteLine($"El Jugador eligió: {opciociones[playerUser]}");
+                                    Console.WriteLine($"Dealer choosed: {opciociones[playerPC]}");
+                                    Console.WriteLine($"Player choosed: {opciociones[playerUser]}");
 
                                     // realizamos juego;
                                     // 0 = Piedra, 1 = Papel, 3 = Tijeras
@@ -137,7 +135,7 @@ do
                                             case 0:                         // El usuario selecciono piedra
                                                 if (playerPC == 1)          // La PC eligió papel
                                                 {
-                                                    juegoResultado = "Delear";
+                                                    juegoResultado = "Dealer";
                                                     winDealer++;
                                                     playerCoins = playerCoins - playerApuestaHecha;
                                                 }
@@ -152,7 +150,7 @@ do
                                             case 1:                         // El usuario selecciono papel
                                                 if (playerPC == 2)          // La PC eligió tiejeras
                                                 {
-                                                    juegoResultado = "Delear";
+                                                    juegoResultado = "Dealer";
                                                     winDealer++;
                                                     playerCoins = playerCoins - playerApuestaHecha;
                                                 }
@@ -167,7 +165,7 @@ do
                                             case 2:                         // El usuario selecciono tijeras
                                                 if (playerPC == 0)          // La PC eligió piedra
                                                 {
-                                                    juegoResultado = "Delear";
+                                                    juegoResultado = "Dealer";
                                                     winDealer++;
                                                     playerCoins = playerCoins - playerApuestaHecha;
                                                 }
@@ -180,12 +178,12 @@ do
                                                 break;
 
                                             default:
-                                                Console.WriteLine("Conjunto de opciones no evaluada...");
+                                                Console.WriteLine("The option isn't valid...");
                                                 break;
                                         }
                                     }
 
-                                    Console.WriteLine($"El ganador del juego es: {juegoResultado}\n\n\n");
+                                    Console.WriteLine($"The winner is: {juegoResultado}\n\n\n");
                                 }
                             }
 
@@ -193,7 +191,7 @@ do
                             {
                                 jugando = false;
                                 Console.Clear();
-                                Console.WriteLine("Gracias por jugar Piedra, Papel o Tijeras");
+                                Console.WriteLine("Thanks for play Rock, paper, scissors");
                                 Console.WriteLine($"Ya no cuenta con las monedas sufientes para continuar apostando\nLa apuesta establecida es de {playerApuestaHecha} monedas");
                                 Console.WriteLine($"Su saldo inicial fue de: {playerSaldoInicial}");
                                 Console.WriteLine($"Su saldo final en este juego es de: {playerCoins}");
