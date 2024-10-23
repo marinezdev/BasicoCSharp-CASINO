@@ -40,7 +40,7 @@ do
             else
             {
                 Console.Clear();
-                Console.WriteLine("how many coins do you want to buy?");
+                Console.WriteLine("how many coins do you want to bet?");
                 playerApuesta = Console.ReadLine() ?? string.Empty;
 
                 if (playerApuesta.ToUpper() == "X")
@@ -191,11 +191,11 @@ do
                             {
                                 jugando = false;
                                 Console.Clear();
-                                Console.WriteLine("Thanks for play Rock, paper, scissors");
-                                Console.WriteLine($"Ya no cuenta con las monedas sufientes para continuar apostando\nLa apuesta establecida es de {playerApuestaHecha} monedas");
-                                Console.WriteLine($"Su saldo inicial fue de: {playerSaldoInicial}");
-                                Console.WriteLine($"Su saldo final en este juego es de: {playerCoins}");
-                                Console.WriteLine($"Su record es:\nTotal de juegos Ganados: {winUser}\nTotal de juegos Perdidos: {winDealer}");
+                                Console.WriteLine("Thaks for play: Rock, paper, scissors");
+                                Console.WriteLine($"You no longer have enough coins to continue betting. The established bet is {playerApuestaHecha} coins.");
+                                Console.WriteLine($"You started with {playerSaldoInicial} coins.");
+                                Console.WriteLine($"Your balance in this game is: {playerCoins}");
+                                Console.WriteLine($"Your record is:\nGames Wins: {winUser}\nGames Lost: {winDealer}");
                                 Console.ReadLine();
                             }
                         }
@@ -206,10 +206,10 @@ do
 
         case "100":
             Console.Clear();
-            Console.WriteLine(" C A S I N O\nCompra de monedas\nCuántas monedas quiere comprar?\n ... {por favor, indique un numero entero mayor a cero}");
+            Console.WriteLine(" C A S I N O\nBuy Coins\nHow many coins do you want to buy?");
             playerCoins = int.Parse(Console.ReadLine()?.ToString() ?? "0");
             playerSaldoInicial = playerCoins;
-            Console.WriteLine($"Su compra por {playerCoins} monedas; se realizó correctamente.");
+            Console.WriteLine($"Your purchase for {playerCoins} medas was successful.");
             Console.ReadLine();
             break;
 
