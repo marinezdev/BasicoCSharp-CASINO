@@ -27,10 +27,70 @@ do
     switch (userOptionChose.ToUpper())
     {
         case "1":
-            //TODO: Pendiente: [funcionalidad] Agregar juego de Black Jack
+            // Juego de BlackJack
+            // El juego se lleva acabo solicitando cartas, sumando cada una de las cartas asignadas.
+            // el obejtevo es obtener 21 (en la sumatoria de las cartas)
+            // si la sumatoria es mayor a 21 el jugador pierde
+            // en caso de que no realice la suma de 21, el jugador que mas cercano este a 21 es el ganador (dealer)
+            if (playerCoins <= 0)
+            {
+                Console.Clear();
+                Console.WriteLine("You don't have more coins; pelaase you buy some coins to continue...");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("how many coins do you want to bet?");
+                playerApuesta = Console.ReadLine() ?? string.Empty;
+
+                if (playerApuesta.ToUpper() == "X")
+                {
+                    Console.WriteLine("Thanks for play Rock, paper, scissors");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    int.TryParse(playerApuesta ?? "0", out playerApuestaHecha);
+                    if (playerApuestaHecha == 0 || playerApuestaHecha > playerCoins)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("The bet is not valid, please indicate a correct bet to continue...");
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Let's playing Black Jack\n ... {input <enter> to play}");
+                        Console.ReadLine();
+
+                        Console.Clear();
+                        Console.WriteLine("Playing...");
+
+                        aqui va el juego;
+
+
+                        //Console.Clear();
+                        //Console.WriteLine("Thaks for play: Rock, paper, scissors");
+                        //Console.WriteLine($"You no longer have enough coins to continue betting. The established bet is {playerApuestaHecha} coins.");
+                        //Console.WriteLine($"You started with {playerSaldoInicial} coins.");
+                        //Console.WriteLine($"Your balance in this game is: {playerCoins}");
+                        //Console.WriteLine($"Your record is:\nGames Wins: {winUser}\nGames Lost: {winDealer}");
+                        //Console.ReadLine();
+
+                    }
+                }
+            }
             break;
 
         case "2":
+            // Juego de Piedra Papel o Tijeras
+            // El juego se realiza solicitando que el jugador selecciona una de las opciones y de manera aleatoria el dealer (PC) tambien se le asigna una opcion...
+            // se realiza la validacion entre las 2 selecciones para ver cual es la ganadora
+            // Las reglas del juego son:
+            //      Piedra rompe a Tijeras      [gandor: Piedra]
+            //      Tijeras corta papel         [gandor: Tijeras]
+            //      Papel envuelve a piedra     [gandor: Papel]
             if (playerCoins <= 0)
             {
                 Console.Clear();
