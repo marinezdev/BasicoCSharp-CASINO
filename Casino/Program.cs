@@ -12,6 +12,8 @@ int playerApuestaHecha = 0;
 string playerApuesta = string.Empty;
 string userOptionChose = string.Empty;
 string juegoResultado = string.Empty;
+string message = string.Empty;
+Random rnd = new Random();
 
 do
 {
@@ -46,7 +48,7 @@ do
 
                 if (playerApuesta.ToUpper() == "X")
                 {
-                    Console.WriteLine("Thanks for play Rock, paper, scissors");
+                    Console.WriteLine("Thanks for play Black Jack");
                     Console.ReadLine();
                 }
                 else
@@ -60,15 +62,78 @@ do
                     }
                     else
                     {
-                        Console.Clear();
-                        Console.WriteLine("Let's playing Black Jack\n ... {input <enter> to play}");
-                        Console.ReadLine();
+                        int counter = 0;
+                        string continuePlaying = string.Empty;
 
-                        Console.Clear();
-                        Console.WriteLine("Playing...");
+                        while (playerCoins >= playerApuestaHecha || continuePlaying != "X")
+                        {
+                            int carta = 0;
+                            int playerDealer = 0;
+                            int playerOne = 0;
+                            string playerRespuesta = string.Empty;
+                            
 
-                        aqui va el juego;
+                            Console.Clear();
+                            Console.WriteLine($"Juego número: {counter + 1}... Creditos disponibles: {playerCoins}... La apuesta realizada es de: {playerApuestaHecha}\n");
+                            Console.WriteLine("jugando....\n");
+                            Console.WriteLine("Let's playing Black Jack\n ... {input <enter> to play or <X> to exit}");
+                            continuePlaying = Console.ReadLine().ToString();
 
+                            if (continuePlaying.ToUpper() != "X")
+                            {
+                                do
+                                {
+                                    carta = rnd.Next(1, 13);
+                                    playerOne += carta;
+
+                                    // ### Pendiente: Darle valor de 10 a las cartas J, Q & K y un valor de 11 para el Az
+                                    // Validamos si ya se pasa de 21 
+                                    if (playerOne > 21)
+                                    {
+                                        playerRespuesta = "No";
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine($"Tu carta Asignada es: {carta}");
+                                        Console.WriteLine("Desea obtener otra carta (Si / No)?");
+                                        playerRespuesta = Console.ReadLine()?.ToUpper() ?? string.Empty;
+                                    }
+                                }
+                                while (playerRespuesta == "SI" || playerRespuesta == "S");
+
+                                // Generamos el valor para el Dealer
+                                playerDealer = rnd.Next(15, 23);
+                                if (playerOne > playerDealer && playerOne <= 21)
+                                {
+                                    message = "Venciste al Dealer... Felicidades!";
+                                }
+                                else if (playerOne > 21)
+                                {
+                                    message = "Perdiste contra el Dealer... Te pasaste de 21... lo siento!";
+                                }
+                                else if (playerOne <= playerDealer)
+                                {
+                                    message = "Perdiste contra el Dealer (empate)... lo siento!";
+                                }
+                                else
+                                {
+                                    message = "Condición no válida...";
+                                }
+                            }
+
+                            //Console.Clear();
+                            Console.WriteLine($"Resultado del juego: \n" +
+                                $"Player One: {playerOne}\n" +
+                                $"Dealer: {playerDealer}\n");
+
+                            Console.WriteLine(message);
+                            Console.WriteLine(" \n tecle <enter> para continuar jugando...");
+                            Console.ReadLine();
+                            Console.Clear();
+                        }
+
+                        //Console.WriteLine($"Adquiriste {coins} monedas.\n teclea <enter para continuar jugando>");
+                        //Console.ReadLine();
 
                         //Console.Clear();
                         //Console.WriteLine("Thaks for play: Rock, paper, scissors");

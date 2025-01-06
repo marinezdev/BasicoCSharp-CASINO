@@ -1,7 +1,16 @@
 ﻿<Properties StartupConfiguration="{961A7955-B110-41AC-A957-CC5516DD40A0}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/Program.cs" relfile="Casino/Program.cs" line="35" column="13" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Casino PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Casino/Program.cs">
     <Files>
-      <File FileName="Casino/Program.cs" Line="65" Column="42" />
+      <File FileName="Casino/Program.cs" Line="75" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,13 +24,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Casino PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rubenmarinez/Me/Persons/RMF/growth/platzi/Cursos/02 - Programacion Basica con C#/02 - proyectoFinal/Casino/Casino/Program.cs" relfile="Casino/Program.cs" line="30" column="13" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
